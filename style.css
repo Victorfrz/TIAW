@@ -41,3 +41,19 @@ header{
     color: white;
 }
 
+.picture-input{
+    display: none;
+}
+
+.picture{
+width: 250px;
+height: 250px;
+background: #ddd;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #bbb;
+border: 2px dashed #aaa;
+cursor: pointer;
+font-family: sans-serif;
+}
