@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    background-color: lightgreen;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo-imagem{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 25px;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+}
+
+.logo-texto{
+    margin-left: 20px;
+    color: white;
+}
+
+.menu li{
+    display: inline-block;
+}
+
+
+.menu a{
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+}
+
