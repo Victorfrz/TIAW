@@ -34,3 +34,18 @@ document.querySelectorAll('.picture-input').forEach((inputFile) => {
   });
 });
 });
+
+  fetch('perfil.json')
+    .then(response => response.json())
+    .then(data => {
+      const main = document.getElementById('conteudo-principal');
+      main.innerHTML = `
+        <div class="container-personalizada">
+          <h1>Nome: ${data.nome}</h1>
+          <h1>Telefone: ${data.telefone}</h1>
+          <h1>Carro: ${data.carro}</h1>
+          <h1>Placa: ${data.placa}</h1>
+        </div>
+      `;
+    })
+    .catch(error => console.error('Erro ao carregar JSON:', error));
